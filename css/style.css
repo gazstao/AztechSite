@@ -36,24 +36,6 @@ a:active {
   text-decoration: underline;
 }
 
-.logo{
-  margin-top: 2em;
-}
-
-.linkes{
-  text-align: left;
-}
-
-.icon {
-  width: 300px;
-  margin-left: 1em;
-  text-align: left;
-}
-
-.invisible{
-  color: #D5C6A5;
-}
-
 table {
   width: 100%;
   text-align: center;
@@ -110,4 +92,22 @@ div{
 .circular{
   width: 320px;
   border-radius: 100%;
+}
+
+.logo{
+  margin-top: 2em;
+}
+
+.linkes{
+  text-align: left;
+}
+
+.icon {
+  width: 300px;
+  margin-left: 1em;
+  text-align: left;
+}
+
+.invisible{
+  color: #D5C6A5;
 }
