@@ -1,0 +1,107 @@
+body {
+  font-family: 'Source Sans Pro',  "Helvetica","Arial", sans-serif;
+  font-style: normal;
+  margin: 0 auto;
+  margin-left: 3em;
+  margin-top: 2em;
+  background: linear-gradient(to top, #c3d9ff 0%,#b1c8ef 41%,#98b0d9 100%);
+  display: inline-block;
+  max-width: 50em;
+}
+
+td {
+  font-family: 'Source Sans Pro',  "Helvetica","Arial", sans-serif;
+  text-align: left;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+curriculo {
+  margin: 0;
+  /*background-color: lightskyblue;*/
+  background: linear-gradient(to top, #c3d9ff 0%,#b1c8ef 41%,#98b0d9 100%);
+  display: inline-block;
+  text-align: left;
+}
+
+li{
+  padding-top: 1px;
+  width: 70%;
+  list-style-type:circle;
+}
+
+em{
+  font-size: 120%;
+}
+
+img {
+  position: relative;
+  /*bottom: 1em;*/
+}
+
+h1, h3 {
+  margin-top: 0;
+  font-family: 'Merriweather', serif;
+}
+
+h4, h5 {
+  margin-top: 0;
+}
+
+
+a:hover {
+  color: black;
+  background-color: transparent;
+}
+
+.handwrited{
+  margin-top: 0;
+  font-family: 'Grand Hotel', cursive;
+  font-size: 1.5em;
+}
+
+.top-box {
+  margin-top: 3em;
+  margin-left: 5em;
+  width: 200px;
+  height: 200px;
+  border: 10px solid green;
+  padding: 20px;
+  background-color: yellow;
+}
+
+.middle-box {
+  text-align: center;
+  padding: 20px;
+  font-family: 'Special Elite', cursive;
+  margin-top: 2em;
+  margin-left: 5em;
+  width: 200px;
+  height: 200px;
+  border: 10px solid yellow;
+  background-color: #00cc00;
+}
+
+.img-relative {
+  position: relative;
+  right: 2em;
+}
+
+.img-fixed {
+  position:fixed;
+  right:2em;
+  top:2em;
+}
+
+.mountain {
+  /*left:5em;
+  top:4em;*/
+  position: fixed;
+  right: 0em;
+  bottom: 0em;
+  margin: auto;
+}
+
+.pro {
+  text-decoration: underline;
+}
