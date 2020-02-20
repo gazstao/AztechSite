@@ -45,7 +45,7 @@ a:active {
 }
 
 .icon {
-  width: 400px;
+  width: 300px;
   margin-left: 1em;
   text-align: left;
 }
@@ -79,8 +79,6 @@ em{
 img {
   position: relative;
   border-radius: 1em;
-  border:black solid 2px;
-  /*bottom: 1em;*/
 }
 
 div{
@@ -110,6 +108,6 @@ div{
 }
 
 .circular{
-  width: 345px;
+  width: 320px;
   border-radius: 100%;
 }
