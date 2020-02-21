@@ -6,7 +6,7 @@ body {
   margin: 0 auto;
   background: linear-gradient(to top left, #a9a9ff 0%, #8989ee 100%);
   background-color: #a9a9ff;
-  width: 75%;
+  width: 80%;
 }
 
 div {
@@ -58,7 +58,6 @@ h6{
 
 img {
   position: relative;
-  /*bottom: 1em;*/
 }
 
 a:link {
@@ -160,6 +159,13 @@ a:active {
 .icons-left{
   max-width: 200px;
   float:left;
+  margin-right: 30px;
+}
+
+.icons-right{
+  max-width: 200px;
+  float:right;
+  margin-left: 30px;
 }
 
 .pro {
