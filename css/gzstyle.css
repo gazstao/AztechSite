@@ -6,11 +6,11 @@ body {
   margin: 0 auto;
   background: linear-gradient(to top left, #a9a9ff 0%, #8989ee 100%);
   background-color: #a9a9ff;
-  width: 80%;
+  width: 90%;
 }
 
-div {
-  display:inline-table;
+div{
+  display: inline-table;
 }
 
 em{
@@ -18,8 +18,11 @@ em{
 }
 
 hr{
+  border: 3px;
+  border-style: dashed;
   margin-top: 2rem;
   margin-bottom: 4rem;
+  width:100px;
 }
 
 
@@ -88,7 +91,7 @@ a:active {
   position: relative;
   padding-top: 100px;
   padding-bottom: 0;
-  height: 80%;
+  width: 90%;
 }
 
 .middle-container {
@@ -96,7 +99,7 @@ a:active {
 }
 
 .bottom-container {
-
+  display:inline-table;
 }
 
 .top-cloud{
@@ -132,6 +135,7 @@ a:active {
 }
 
 .curriculo{
+  display: inline-table;
   text-align: left;
   margin-bottom: 5em;
 }
@@ -146,7 +150,6 @@ a:active {
 }
 
 .skill-row{
-
   margin: 50px auto auto auto ;
   width: 80%;
   line-height: 1.3;
@@ -159,13 +162,6 @@ a:active {
 .icons-left{
   max-width: 200px;
   float:left;
-  margin-right: 30px;
-}
-
-.icons-right{
-  max-width: 200px;
-  float:right;
-  margin-left: 30px;
 }
 
 .pro {
