@@ -18,11 +18,10 @@ em{
 }
 
 hr{
-  border: 3px;
-  border-style:dashed;
-  margin-top: 4rem;
-  margin-bottom: 4rem;
-  width:100px;
+  border: dotted 6px;
+  border-bottom: none;
+  margin: 5em auto 5em auto;
+  width:10%;
 }
 
 
@@ -69,18 +68,21 @@ img {
 a:link {
   background-color: transparent;
   text-decoration: none;
-  padding: 10px;
-}
+  padding: 4px 10px;
+  color: #222299;
+  }
 
 a:visited {
   background-color: transparent;
   text-decoration: none;
+  color: #000077;
 }
 
 a:hover {
   text-decoration: none;
   border-style: solid;
   border-width:thin;
+  border-radius:8px;
 }
 
 a:active {
@@ -88,8 +90,12 @@ a:active {
   text-decoration: none;
 }
 
+p{
+  line-height: 1.3;
+}
+
 .contact-me {
-  width: 80%;
+  width: 60%;
 }
 
 .top-container {
@@ -107,7 +113,7 @@ a:active {
 }
 
 .bottom-container {
-  display:inline-table;
+  display:block;
 }
 
 .top-cloud{
@@ -119,7 +125,8 @@ a:active {
 .bottom-cloud{
   position:absolute;
   left:100px;
-  bottom: 400px;
+  top: 250px;
+  opacity: 0.8;
 }
 
 
@@ -150,8 +157,10 @@ a:active {
 .skill-row {
   margin: 50px auto auto auto ;
   width: 80%;
-  line-height: 1.3;
   text-align: left;
+}
+
+.profile{
 }
 
 .icons{
