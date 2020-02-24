@@ -38,6 +38,7 @@ a:active {
   text-decoration: underline;
 }
 
+
 table {
   width: 100%;
   text-align: center;
@@ -71,6 +72,10 @@ div{
   text-align: center;
 }
 
+p{
+  font-size: 1rem;
+}
+
 .relative {
   position: relative;
   right: 2em;
@@ -92,12 +97,12 @@ div{
 }
 
 .circular{
-  width: 320px;
+  width: 300px;
   border-radius: 100%;
 }
 
 .logo{
-  margin-top: 4em;
+  margin-top: 2em;
 }
 
 .linkes{
@@ -109,8 +114,22 @@ div{
   width: 300px;
   margin-left: 1em;
   text-align: left;
+  display:block;
+  margin: auto;
+}
+
+.smallicon {
+  width: 100px;
+  margin-left: 1em;
+  text-align: left;
+  display:block;
+  margin: auto;
 }
 
 .invisible{
   color: #D5C6A5;
+}
+
+.end{
+  font-size: .8rem;
 }
