@@ -38,6 +38,12 @@ a:active {
   text-decoration: underline;
 }
 
+hr{
+  border: dotted 6px;
+  border-bottom: none;
+  margin: 5em auto 5em auto;
+  width:10%;
+}
 
 table {
   width: 100%;
@@ -61,13 +67,20 @@ img {
 }
 
 div{
-  min-height: 10em;
+  margin-top: 4rem;
+  min-height: 10rem;
   vertical-align: middle;
   text-align: center;
 }
 
 p{
   font-size: 1rem;
+}
+
+h5{
+  text-align: justify;
+  font-style: normal;
+  font-weight: normal;
 }
 
 .relative {
@@ -82,8 +95,6 @@ p{
 }
 
 .mountain {
-  /*left:5em;
-  top:4em;*/
   position: fixed;
   right: 0;
   bottom: 0;
@@ -93,6 +104,10 @@ p{
 .circular{
   width: 300px;
   border-radius: 100%;
+}
+
+.emlinha{
+  display: inline;
 }
 
 .logo{
@@ -111,6 +126,17 @@ p{
   display:block;
   margin: auto;
 }
+
+.medicon {
+  position: relative;
+  top: 2em;
+  left:5em;
+  float:left;
+  width: 150px;
+  display:block;
+  margin: auto;
+}
+
 
 .smallicon {
   width: 100px;

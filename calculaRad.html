@@ -3,18 +3,22 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Gazstao WebLab Links</title>
+  <title>Conversor de Unidades de Radiação - Aztech Alta Tecnologia</title>
   <link rel="stylesheet" href="css/style.css" />
   <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <div>
-    <img class="logo" src="images/logo.jpg"><br /><br />
-    <h2>Conversor de Unidades de Radiação e Cálculo de Decaimento</h2><br /><br />
-    <img class="icon" src="images/nuclearcomputer.svg">
 
+  <div class="emlinha">
+    <h2>Conversor de Unidades de Radiação</h2><br /><br />
+    <img class="medicon" src="images/radioactivesimbol.svg">
     <table class="smallTable">
+      <tr>
+        <td>
+          <h3>Radioatividade</h3>
+        </td>
+      </tr>
       <tr>
         <td>mCi (milicurie) :</td>
         <td> <input id="inputmci" type="number" placeholder="mci" oninput="radConverter(this.value)" onchange="radConverter(this.value)"></td>
@@ -26,14 +30,85 @@
       <tr>
         <td>Bq (becquerel) :</td>
         <td><input id="inputbq" type="number" placeholder="bq" oninput="radConverter3(this.value)" onchange="radConverter3(this.value)"> </td>
-        <td> = desintegrações por segundo</td>
       </tr>
+      <tr><td></tr></td>
+      <tr><td colspan="1,2"><h5>Unidade de radioatividade absoluta: decaimentos por segundo em uma fonte de radiação. Um becquerel é igual a
+      um decaimento por segundo.</h5></td></tr>
+    </table>
+  </div>
+  <hr>
+  <div class="emlinha">
+    <img class="medicon" src="images/dna.svg">
+    <table class="smallTable">
+      <tr>
+        <td>
+          <h3>Dose Absorvida</h3>
+        </td>
+      </tr>
+      <tr>
+        <td>Gy (Gray) :</td>
+        <td> <input id="inputgray" type="number" placeholder="gray" oninput="aradConverter(this.value)" onchange="aradConverter(this.value)"></td>
+      </tr>
+      <tr>
+        <td>rad :</td>
+        <td><input id="inputrad" type="number" placeholder="rad" oninput="aradConverter2(this.value)" onchange="aradConverter2(this.value)"> </td>
+      </tr>
+      <tr><td></tr></td>
+      <tr><td colspan="1,2"><h5>A dose absorvida foi definida como a quantidade energia cedida à matéria pela radiação ionizante por unidade de massa do material. Dessa forma,
+         essa grandeza pode ser definida para qualquer tipo de radiação ionizante, bem como para qualquer meio.</h5></td></tr>
+    </table>
+  </div>
 
+  <hr>
+  <div class="emlinha">
+    <img class="medicon" src="images/nuclearcomputer.svg">
+    <table class="smallTable">
+      <tr>
+        <td>
+          <h3>Dose Equivalente</h3>
+        </td>
+      </tr>
+      <tr>
+        <td>rem :</td>
+        <td> <input id="inputrem" type="number" placeholder="rem" oninput="eradConverter(this.value)" onchange="eradConverter(this.value)"></td>
+      </tr>
+      <tr>
+        <td>milisievert :</td>
+        <td><input id="inputms" type="number" placeholder="milisievert" oninput="eradConverter2(this.value)" onchange="eradConverter2(this.value)"> </td>
+      </tr>
+      <tr><td></tr></td>
+      <tr><td colspan="1,2"><h5> A dose equivalente é uma grandeza física que descreve o efeito relativo dos distintos tipos de radiações
+        ionizantes sobre os tecidos vivos. Sua unidade de medida é o Sievert. A dose equivalente é um valor com maior significado biológico
+        que a dose absorvida.</h5></td></tr>
+    </table>
+  </div>
+
+  <hr>
+  <div class="emlinha">
+    <img class="medicon" src="images/nuclearatom.svg">
+    <table class="smallTable">
+      <tr>
+        <td>
+          <h3>Exposição</h3>
+        </td>
+      </tr>
+      <tr>
+        <td>R (roentgen) :</td>
+        <td> <input id="inputr" type="number" placeholder="roentgen" oninput="exradConverter(this.value)" onchange="exradConverter(this.value)"></td>
+      </tr>
+      <tr>
+        <td>C/kg (coulomb/quilograma) :</td>
+        <td><input id="inputcqg" type="number" placeholder="coulomb por quilograma" oninput="exradConverter2(this.value)" onchange="exradConverter2(this.value)"> </td>
+      </tr>
+      <tr><td></tr></td>
+      <tr><td colspan="1,2"><h5> O Röntgen foi usado ocasionalmente para medir a exposição a radiação não apenas de raios X e raios Gama.
+        Para ajustar-se à medição do impacto em matéria orgânica, a unidade "röntgen equivalent man" ou rem foi também usada.
+        A exposição em "rem" é igual à exposição em Röntgen multiplicada pelo valor Q, constante que descreve o tipo de radiação.
+        O rem foi tornado obsoleto pelo sievert.</h5></td></tr>
     </table>
   </div>
 
   <script>
-
     function radConverter(valNum) {
       document.getElementById("inputbq").value = valNum * 37000000;
       document.getElementById("inputmbq").value = valNum * 37;
@@ -44,18 +119,40 @@
       document.getElementById("inputbq").value = valNum * 1000000;
     }
 
-  function radConverter3(valNum) {
-    document.getElementById("inputmbq").value = valNum / 1000000;
-    document.getElementById("inputmci").value = valNum / 37000000;
-  }
+    function radConverter3(valNum) {
+      document.getElementById("inputmbq").value = valNum / 1000000;
+      document.getElementById("inputmci").value = valNum / 37000000;
+    }
+
+    function aradConverter(valNum) {
+      document.getElementById("inputrad").value = valNum * 100;
+    }
+
+    function aradConverter2(valNum) {
+      document.getElementById("inputgray").value = valNum / 100;
+    }
+
+    function eradConverter(valNum) {
+      document.getElementById("inputms").value = valNum * 10;
+    }
+
+    function eradConverter2(valNum) {
+      document.getElementById("inputrem").value = valNum / 10;
+    }
+
+    function exradConverter(valNum) {
+      document.getElementById("inputcqg").value = valNum * 0.000258;
+    }
+
+    function exradConverter2(valNum) {
+      document.getElementById("inputr").value = valNum * 3880;
+    }
 
   </script>
-<br><br>
-  <div>
-    <a href="index.html">Voltar</a>
-  </div>
+  <br>
   <br />
   <div class="end">
+    <a href="index.html">Voltar</a><br><Br>
     Aztech Alta Tecnologia &copy; 2020 por <a href="Gazstao.html">Gazstao</a>
   </div>
 </body>

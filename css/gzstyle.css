@@ -150,6 +150,7 @@ p{
 }
 
 .curriculo{
+  max-width: 70%;
   text-align: left;
   margin-bottom: 5em;
 }
