@@ -10,12 +10,48 @@
 
 <body>
   <div>
-  <img class="logo" src="images/logo.jpg"><br /><br />
-  <h2>Conversor de Unidades de Radiação e Cálculo de Decaimento</h2><br /><br />
-  <img class="icon" src="images/nuclearcomputer.svg">
-  Em construção!
-</div>
-<div>
+    <img class="logo" src="images/logo.jpg"><br /><br />
+    <h2>Conversor de Unidades de Radiação e Cálculo de Decaimento</h2><br /><br />
+    <img class="icon" src="images/nuclearcomputer.svg">
+
+    <table class="smallTable">
+      <tr>
+        <td>mCi (milicurie) :</td>
+        <td> <input id="inputmci" type="number" placeholder="mci" oninput="radConverter(this.value)" onchange="radConverter(this.value)"></td>
+      </tr>
+      <tr>
+        <td>MBq (mega becquerel) :</td>
+        <td><input id="inputmbq" type="number" placeholder="mbq" oninput="radConverter2(this.value)" onchange="radConverter2(this.value)"> </td>
+      </tr>
+      <tr>
+        <td>Bq (becquerel) :</td>
+        <td><input id="inputbq" type="number" placeholder="bq" oninput="radConverter3(this.value)" onchange="radConverter3(this.value)"> </td>
+        <td> = desintegrações por segundo</td>
+      </tr>
+
+    </table>
+  </div>
+
+  <script>
+
+    function radConverter(valNum) {
+      document.getElementById("inputbq").value = valNum * 37000000;
+      document.getElementById("inputmbq").value = valNum * 37;
+    }
+
+    function radConverter2(valNum) {
+      document.getElementById("inputmci").value = valNum / 37;
+      document.getElementById("inputbq").value = valNum * 1000000;
+    }
+
+  function radConverter3(valNum) {
+    document.getElementById("inputmbq").value = valNum / 1000000;
+    document.getElementById("inputmci").value = valNum / 37000000;
+  }
+
+  </script>
+<br><br>
+  <div>
     <a href="index.html">Voltar</a>
   </div>
   <br />

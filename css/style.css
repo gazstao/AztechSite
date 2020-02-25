@@ -45,12 +45,6 @@ table {
   margin-bottom: 2em;
 }
 
-td , tr {
-  width:15%;
-  text-align: center;
-  border-style:none;
-}
-
 li{
   padding-top: 1px;
   width: 70%;
@@ -132,4 +126,10 @@ p{
 
 .end{
   font-size: .8rem;
+}
+
+.smallTable{
+  max-width: 600px;
+  margin:auto;
+  text-align: left;
 }
