@@ -1,0 +1,15 @@
+body {
+  font-family:'Open Sans',  "Helvetica","Arial", sans-serif;
+  margin: 0 auto;
+  background: linear-gradient(to bottom, #857655 0%, #B5A685 20%, #D5C6A5 100%);
+  text-align: center;
+}
+
+.medicon{
+  max-width: 200px;
+}
+
+#title{
+  text-align: center;
+  margin: 5% auto;
+}
