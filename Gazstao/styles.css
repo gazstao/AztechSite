@@ -42,12 +42,7 @@ hr{
   width:10%;
 }
 
-ul {
-
-}
-
 li{
-  max-width: 400px;
   margin: 0 auto;
   padding-top: 1px;
   list-style-type:circle;
@@ -65,7 +60,7 @@ img {
 }
 
 div{
-  margin-top: 4rem;
+  margin-top: 2rem;
   vertical-align: middle;
   text-align: center;
 }
@@ -164,8 +159,13 @@ td, tr{
 
 .imagem {
     width: 600px;
-    height: 300px;
+    height: 370px;
     object-fit:scale-down ;
     object-position: center;
     border-radius: 5%;
+}
+
+.ulDiv{
+  max-width: 800px;
+  margin: 0 auto;
 }
