@@ -81,47 +81,13 @@ td, tr{
 
 /* Cabeçalho */
 
-#fotos {
-  background-color: 857655;
-  color: black;
-  width:100%;
-}
-
-.cabecalho-image {
-    width: 466px;
-    height: 201px;
-    object-fit: cover;
-    object-position: center;
-    border-radius: 5%;
-    border: 2pt solid black;
-}
 
 .narrow{
-  max-width:0px;
+  max-width:50px;
 }
-
-/* startdiv */
 
 .bloco{
   font-size: 1rem;
-}
-
-/* Bloco 2 */
-
-.bloco2{
-  padding-top: 100px;
-  padding-bottom: 100px;
-  color: #D5C6A5 ;
-  background-color: #303030;
-}
-
-.bloco2 a:link {
-  color: #B5A685;
-  padding: 0 10px;
-}
-
-bloco2 a:visited {
-  color: #B5A685;
 }
 
 .letramaior{
@@ -131,6 +97,7 @@ bloco2 a:visited {
 .letramenor{
   font-size: 1rem;
 }
+
 .container-fluid {
   padding: 0 15% 3% 15% ;
 }
@@ -139,64 +106,10 @@ bloco2 a:visited {
   margin-top: 3rem;
 }
 
-.topspace2{
-  margin-top: 5rem;
-}
 
 .borda{
   border: 2pt solid black;
 }
-
-.relative {
-  position: relative;
-  right: 2em;
-}
-
-.fixed {
-  position:fixed;
-  right:2em;
-  top:2em;
-}
-
-.mountain {
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  margin: auto;
-}
-
-.circular{
-  width: 300px;
-  border-radius: 100%;
-}
-
-.emlinha{
-  display: inline;
-}
-
-.linkes{
-  text-align: left;
-  margin: auto auto auto 10rem;
-}
-
-.icon {
-  width: 300px;
-  margin-left: 1em;
-  text-align: left;
-  display:block;
-  margin: auto;
-}
-
-.medicon {
-  position: relative;
-  top: 2em;
-  left:5em;
-  float:left;
-  width: 150px;
-  display:block;
-  margin: auto;
-}
-
 
 .smallicon {
   width: 100px;
@@ -250,10 +163,9 @@ bloco2 a:visited {
 }
 
 .imagem {
-    width: 466px;
-    height: 201px;
-    object-fit: fill;
+    width: 600px;
+    height: 300px;
+    object-fit:scale-down ;
     object-position: center;
     border-radius: 5%;
-    border: 2pt solid black;
 }
