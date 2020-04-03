@@ -4,8 +4,8 @@ var randomNumber2 = Math.floor(Math.random()*6+1);
 var img1 = "";
 var img2 = "";
 
-img1 = "dice" + randomNumber1 + "png";
-img2 = "dice" + randomNumber2 + "png";
+img1 = "dice" + randomNumber1 + ".png";
+img2 = "dice" + randomNumber2 + ".png";
 
 document.querySelector(".img1").attributes.src.value = "images/"+img1;
 document.querySelector(".img2").attributes.src.value = "images/"+img2;
