@@ -1,6 +1,7 @@
 body {
   text-align: center;
-  background-color: #283149;
+  background-color: black;
+  /* background-color: #283149;*/
 }
 
 h1 {
@@ -8,7 +9,6 @@ h1 {
   color: #DBEDF3;
   font-family: "Arvo", cursive;
   text-shadow: 3px 0 #DA0463;
-
 }
 
 footer {
@@ -16,32 +16,32 @@ footer {
   font-family: sans-serif;
 }
 
-.w {
-
-}
-
 .a {
-
+  background-image: url("images/tom1.png");
 }
 
 .s {
-
+  background-image: url("images/tom2.png");
 }
 
 .d {
+  background-image: url("images/tom3.png");
+}
 
+.f {
+  background-image: url("images/tom4.png");
 }
 
 .j {
-
+  background-image: url("images/crash.png");
 }
 
 .k {
-
+  background-image: url("images/kick.png");
 }
 
 .l {
-
+  background-image: url("images/snare.png");
 }
 
 .set {
@@ -80,8 +80,7 @@ footer {
   background-color: white;
 }
 
-
-a{
+a {
   background-color: transparent;
   text-decoration: none;
 }
@@ -98,8 +97,8 @@ a:visited {
 a:hover {
   color: white;
   border-style: solid;
-  border-radius:8px;
-  border-width:thin;
+  border-radius: 8px;
+  border-width: thin;
 }
 
 a:active {
