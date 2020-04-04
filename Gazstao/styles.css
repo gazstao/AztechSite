@@ -16,12 +16,12 @@ a{
 }
 
 a:link {
-  color: darkslategray;
+  color: black;
   padding: 0 10px;
 }
 
 a:visited {
-  color: #404022;
+  color: black;
 }
 
 a:hover {
@@ -32,7 +32,7 @@ a:hover {
 }
 
 a:active {
-  color: olive;
+  color: black;
 }
 
 hr{
