@@ -16,10 +16,11 @@ var tom4 = new Audio("sounds/tom-4.mp3");
 for (var i = 0; i < numeroDeTeclas; i++) {
 
   document.querySelectorAll(".drum")[i].addEventListener("click", function() {
-
     var keyClicked = this.innerHTML;
     tocaSom(keyClicked);
+    buttonAnimation(keyClicked);
   });
+
 }
 
 
@@ -29,6 +30,7 @@ for (var i = 0; i < numeroDeTeclas; i++) {
 
 document.addEventListener("keydown", function(){
   tocaSom(event.key);
+  buttonAnimation(event.key);
 });
 
 
@@ -78,4 +80,13 @@ function tocaSom(tecla){
     default:
       console.log(keyPressed);
   }
+}
+
+
+//
+//  Animando as numeroDeTeclas
+//
+
+function buttonAnimation(currentKey){
+  
 }
