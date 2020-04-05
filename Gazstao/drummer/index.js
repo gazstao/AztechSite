@@ -87,6 +87,7 @@ function tocaSom(tecla){
 //  Animando as numeroDeTeclas
 //
 
-function buttonAnimation(currentKey){
-  
-}
+//function buttonAnimation(currentKey){
+  //var activeButton = document.querySelector("." + currentKey);
+  //activeButton.toggle()
+//}
