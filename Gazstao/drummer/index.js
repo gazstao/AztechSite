@@ -28,11 +28,13 @@ for (var i = 0; i < numeroDeTeclas; i++) {
 //
 
 document.addEventListener("keydown", function(){
-  tocaSom(event.key)
+  tocaSom(event.key);
 });
+
 
 //
 // function tocaSom
+//
 
 function tocaSom(tecla){
 
