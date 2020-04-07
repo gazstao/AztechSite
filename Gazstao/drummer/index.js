@@ -28,9 +28,9 @@ for (var i = 0; i < numeroDeTeclas; i++) {
 //   Adiciona o EventListener para as teclas pressionadas
 //
 
-document.addEventListener("keydown", function(){
-  tocaSom(event.key);
-  buttonAnimation(event.key);
+document.addEventListener("keydown", function() {
+  tocaSom(event.key.toLowerCase());
+  buttonAnimation(event.key.toLowerCase());
 });
 
 
@@ -38,7 +38,7 @@ document.addEventListener("keydown", function(){
 // function tocaSom
 //
 
-function tocaSom(tecla){
+function tocaSom(tecla) {
 
   switch (tecla) {
 
@@ -87,7 +87,14 @@ function tocaSom(tecla){
 //  Animando as numeroDeTeclas
 //
 
-//function buttonAnimation(currentKey){
-  //var activeButton = document.querySelector("." + currentKey);
-  //activeButton.toggle()
-//}
+
+function buttonAnimation(currentKey) {
+
+  var activeButton = document.querySelector("." + currentKey);
+
+  activeButton.classList.add("pressed");
+
+  setTimeout (function (){
+    activeButton.classList.remove("pressed");
+  }, 100);
+}
