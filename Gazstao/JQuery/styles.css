@@ -1,0 +1,13 @@
+body {
+  background-color: purple;
+  color: white;
+}
+
+.spaced {
+  text-align: center;
+  margin: 5rem auto 3rem;
+}
+
+.spaced-little {
+  margin: 0 .2rem;
+}
