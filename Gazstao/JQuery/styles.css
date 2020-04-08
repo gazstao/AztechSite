@@ -3,11 +3,20 @@ body {
   color: white;
 }
 
+.inverted{
+  background-color: black;
+  color: purple; 
+}
+
 .spaced {
   text-align: center;
   margin: 5rem auto 3rem;
 }
 
 .spaced-little {
-  margin: 0 .2rem;
+  margin: 0 .3rem;
+}
+
+.rounded-button {
+  border-radius: 4px;
 }
