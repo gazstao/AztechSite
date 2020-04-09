@@ -42,3 +42,9 @@ function mudaFigura(){
 function mudaClasse(){
   $("h1").toggleClass("inverted");
 }
+
+function botao1(){
+  document.querySelectorAll("button")[0].innerText("Cria Botão");
+}
+
+// Programa
