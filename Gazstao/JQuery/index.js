@@ -26,6 +26,10 @@ console.log("Imagem:"+              $("img").attr("src")                    );
 
 $("img").click(mudaFigura);
 $("h1").click(mudaClasse);
+$("button").click(function () {$("h1").toggleClass("yellow")});
+$(document).keydown(function(event){
+  $("h1").text(event.key);
+});
 
 // Funções
 
