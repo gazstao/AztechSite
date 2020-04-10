@@ -25,10 +25,43 @@ console.log("Imagem:"+              $("img").attr("src")                    );
 // Adicionando Listener
 
 $("img").click(mudaFigura);
-$("h1").click(mudaClasse);
+$("h1").click(function (){$("h1").toggleClass("inverted")});
+
 $("button").click(function () {$("h1").toggleClass("yellow")});
+
 $(document).keydown(function(event){
   $("h1").text(event.key);
+});
+
+$(".b1").text("AddButtons");
+$(".b1").click( function botao1Listener(){
+    $("h1").innerText = "TheButton";
+    $("h1").append("<button class='rounded onthefly'>Appended</button>");
+    $("h1").prepend("<button class='rounded onthefly'>Prepepended</button>");
+    $("h1").before("<button class='rounded onthefly'>Befored</button>");
+    $("h1").after("<button class='rounded onthefly'>Aftered</button>");
+});
+
+$(".b5").text("RemoveButtons");
+$(".b5").click(function botao5Listener(){
+    $("h1").innerText = "TheButton";
+    $(".onthefly").remove();
+    $("body").css("background-color","purple");
+  });
+
+$(".b3").text("Vermelha");
+$(".b3").click(function(){
+  $("body").css("background-color","red");
+});
+
+$(".b2").text("Azul");
+$(".b2").click(function(){
+  $("body").css("background-color","blue");
+});
+
+$(".b4").text("Verde");
+$(".b4").click(function(){
+  $("body").css("background-color","green");
 });
 
 // Funções
@@ -38,13 +71,3 @@ function mudaFigura(){
   else $("img").attr("src","mountain.png");
   console.log("Imagem alterada para "+    $("img").attr("src"));
 }
-
-function mudaClasse(){
-  $("h1").toggleClass("inverted");
-}
-
-function botao1(){
-  document.querySelectorAll("button")[0].innerText("Cria Botão");
-}
-
-// Programa
