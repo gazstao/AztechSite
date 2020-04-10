@@ -33,9 +33,15 @@ $("button").click(function() {
 });
 
 $(document).keydown(function(event) {
-  var texto = $("h1").text();
-  texto = texto + event.key;
-  if (event.key == "Enter") {texto="";}
+  var texto = $("h1").text() + event.key;
+  if (event.key == "Enter") {
+    texto="";
+    $("h1").slideUp(); // fadeIn, show, slideDown, fadeToggle, toggle
+    $("img").slideUp().slideDown().animate({opacity: 0.5});
+  } else {
+    $("img").slideUp(400, function(){$("h1").slideDown(1000)}).slideDown().animate({opacity: 1});
+     // fadeOut, hide, slideUp, slideToogle, toggle
+  }
   $("h1").text(texto);
 });
 
