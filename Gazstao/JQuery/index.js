@@ -39,7 +39,12 @@ $(document).keydown(function(event) {
     $("h1").slideUp(); // fadeIn, show, slideDown, fadeToggle, toggle
     $("img").slideUp().slideDown().animate({opacity: 0.5});
   } else {
-    $("img").slideUp(400, function(){$("h1").slideDown(1000)}).slideDown().animate({opacity: 1});
+    $("img").slideUp(800, function(){
+        $("h1").text("Santiago");
+        $("h1").fadeIn(1000, function(){
+          $("img").slideDown().animate({opacity: 1})
+        });
+      });
      // fadeOut, hide, slideUp, slideToogle, toggle
   }
   $("h1").text(texto);
