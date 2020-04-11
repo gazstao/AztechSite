@@ -3,31 +3,61 @@ var gamePattern = [];
 var userPattern = [];
 var level = 0;
 gameStarted = false;
+tempoLento = 200;
+tempo = 80;
+
+setTimeout( function () { }, 5000);
 
 function nextSequence() {
   var num = Math.floor(Math.random() * 4);
   var randomChosenColour = buttonColors[num];
   gamePattern.push(randomChosenColour);
-  $("h1").text("Level "+level);
+  $("h1").delay(tempoLento).animate({opacity:1},tempoLento);
+  $("h1").text("Level " + level);
+  $("h1").delay(tempoLento).animate({opacity:0},tempoLento);
   level++;
-  piscaBotao(randomChosenColour);
+  userPattern = [];
+  for (var i = 0; i < gamePattern.length; i++) {
+    piscaBotaoLento(gamePattern[i]);
+  }
+}
+
+function testa() {
+  console.log("Testando "+userPattern+" vs "+gamePattern);
+  if (gamePattern.length === userPattern.length){
+    for (var i=0 ; i<gamePattern.length ; i++){
+      if (userPattern[i] != gamePattern[i]){
+        gameOver();
+      }
+    }
+    nextSequence();
+  }
+}
+
+function gameOver(){
+  $("h1").text("Game Over!");
+  //location.reload();
 }
 
 function piscaBotao(cor) {
   var som = new Audio("sounds/" + cor + ".mp3");
-  som.play();
-  $("." + cor).animate({
-    opacity: 0
-  }, 80);
-  $("." + cor).animate({
-    opacity: 1
-  }, 80);
+  $("." + cor).animate({opacity: 0}, tempo);
+  $("." + cor).animate({opacity: 1}, tempo);
+  setTimeout(som.play, 1000);
 }
+
+function piscaBotaoLento(cor) {
+  var som = new Audio("sounds/" + cor + ".mp3");
+  som.play();
+  $("." + cor).delay(tempoLento).animate({opacity: 0},tempo).delay(tempoLento).animate({opacity: 1},tempo)
+}
+
 
 function clica(cor) {
   if (gameStarted) {
     piscaBotao(cor);
     userPattern.push(cor);
+    testa();
   }
 }
 
@@ -51,7 +81,7 @@ $(document).keydown(function(event) {
   if (event.key.toLowerCase() == "s") clica("red");
   if (event.key.toLowerCase() == "z") clica("yellow");
   if (event.key.toLowerCase() == "x") clica("blue");
-  if (!gameStarted){
+  if (!gameStarted) {
     gameStarted = true;
     nextSequence();
   }
