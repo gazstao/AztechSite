@@ -1,5 +1,6 @@
 var buttonColors = [ "red" , "blue" , "green" , "yellow"];
 var gamePattern = [];
+var userPattern = [];
 
 function nextSequence(){
   var num = Math.floor(Math.random()*4);
@@ -17,6 +18,7 @@ function piscaBotao(cor){
 
 function clica(cor){
   piscaBotao(cor);
+  userPattern.push(cor);
 }
 
 $(".green").click( function (){
