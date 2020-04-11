@@ -2,9 +2,8 @@ var buttonColors = ["red", "blue", "green", "yellow"];
 var gamePattern = [];
 var userPattern = [];
 var level = 0;
+var recorde = 0;
 gameStarted = false;
-tempoLento = 200;
-tempo = 80;
 
 // Exibe Sequencia do Jogo
 
@@ -14,20 +13,20 @@ function nextSequence() {
   var num = Math.floor(Math.random() * 4);
   var randomChosenColour = buttonColors[num];
   gamePattern.push(randomChosenColour);
+  console.log("gamePattern:"+gamePattern);
 
   // Pisca o cabeçalho
-  $("h1").delay(tempoLento).animate({opacity: 0}, tempoLento);
+  $("h1").animate({opacity: 0});
   $("h1").text("Level " + level);
-  $("h1").delay(tempoLento).animate({opacity: 1}, tempoLento);
+  $("h1").animate({opacity: 1});
 
   // Novo Level, zera resposta do usuário
   level++;
   userPattern = [];
 
-  // Mostra a Sequencia
-  for (var i = 0; i < gamePattern.length; i++) {
-    setTimeout(piscaBotaoLento(gamePattern[i]),2000);
-  }
+  // Mostra ultimo
+  piscaBotao(randomChosenColour);
+
 }
 
 // Funcao para testar a sequencia recebida
@@ -44,7 +43,8 @@ function testa() {
   }
 
 function gameOver(){
-  $("h1").text("Game Over!");
+  if (level-1 > recorde) recorde = level-1;
+  $("h1").text("Game Over! Record: "+recorde);
   var som = new Audio("sounds/wrong.mp3");
   $("body").addClass("game-over");
 }
@@ -52,17 +52,8 @@ function gameOver(){
 function piscaBotao(cor) {
   var som = new Audio("sounds/" + cor + ".mp3");
   som.play();
-  $("." + cor).animate({opacity: 0}, tempo);
-  $("." + cor).animate({opacity: 1}, tempo);
-}
-
-function piscaBotaoLento(cor) {
-    var som = new Audio("sounds/" + cor + ".mp3");
-    $("." + cor).delay(tempoLento).animate({opacity: 0},
-      tempo).animate({opacity: 1}, tempo).delay(tempoLento);
-      som.play();
-    setTimeout( function(){
-    },1000);
+  $("." + cor).animate({opacity: 0},200);
+  $("." + cor).animate({opacity: 1},200);
 }
 
 function clica(cor) {
@@ -87,8 +78,11 @@ function clica(cor) {
     if (gameStarted) clica("blue");
   });
 
+
   // Adiciona listeners para as teclas
   $(document).keydown(function(event) {
+
+    // se o jogo não começou, inicializa tudo
     if (!gameStarted) {
       level = 0;
       userPattern = [];
@@ -96,7 +90,10 @@ function clica(cor) {
       gameStarted = true;
       $("body").removeClass("game-over");
       nextSequence();
-    } else {
+    }
+
+    // se o jogo já começou, adiciona na sequencia
+    else {
       if (event.key.toLowerCase() == "a") clica("green");
       if (event.key.toLowerCase() == "s") clica("red");
       if (event.key.toLowerCase() == "z") clica("yellow");
