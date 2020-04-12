@@ -6,10 +6,18 @@ var recorde = 0;
 gameStarted = false;
 
 // Adiciona listeners para os cliques
-$(".green").click(function() {clica("green");});
-$(".red").click(function() {clica("red");});
-$(".yellow").click(function() {clica("yellow");});
-$(".blue").click(function() {clica("blue");});
+$(".green").click(function() {
+  clica("green");
+});
+$(".red").click(function() {
+  clica("red");
+});
+$(".yellow").click(function() {
+  clica("yellow");
+});
+$(".blue").click(function() {
+  clica("blue");
+});
 
 // Adiciona listeners para as teclas
 $(document).keydown(function(event) {
@@ -33,8 +41,12 @@ function iniciaJogo() {
 function piscaBotao(cor) {
   var som = new Audio("sounds/" + cor + ".mp3");
   som.play();
-  $("." + cor).animate({ opacity: 0}, 200);
-  $("." + cor).animate({ opacity: 1}, 200);
+  $("." + cor).animate({
+    opacity: 0
+  }, 200);
+  $("." + cor).animate({
+    opacity: 1
+  }, 200);
 }
 
 function clica(cor) {
@@ -65,11 +77,10 @@ function gameOver() {
   if (level - 1 > recorde) recorde = level - 1;
   $("h1").text("Game Over! Record: " + recorde);
   $("body").addClass("game-over");
-  // Mostra ultimo
   setTimeout(function() {
     var som = new Audio("sounds/wrong.mp3");
     som.play();
-  }, 1500);
+  }, 500);
 }
 
 // Exibe Sequencia do Jogo
@@ -83,7 +94,7 @@ function nextSequence() {
   console.log("gamePattern:" + gamePattern);
 
   // Pisca o cabeçalho
-  $("h1").animate({opacity: 0});
+  $("h1").animate({   opacity: 0});
   $("h1").text("Level " + level);
   $("h1").animate({opacity: 1});
 
@@ -92,7 +103,8 @@ function nextSequence() {
   userPattern = [];
 
   // Mostra ultimo
-  setTimeout(function() {
+  setTimeout(function (){
     piscaBotao(randomChosenColour);
-  }, 1500);
+  },500);
+
 }
