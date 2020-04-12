@@ -1,10 +1,10 @@
 body {
   text-align: center;
   background-color: #011F3F;
+  font-family: 'Press Start 2P', cursive;
 }
 
 #level-title {
-  font-family: 'Press Start 2P', cursive;
   font-size: 3rem;
   margin:  5%;
   color: #FEF2BF;
@@ -53,4 +53,30 @@ body {
 .pressed {
   box-shadow: 0 0 20px white;
   background-color: grey;
+}
+
+
+a:link {
+  color: white;
+  padding: 0 10px;
+}
+
+a:visited {
+  color: white
+}
+
+a:hover {
+  color: grey;
+  border-style: solid;
+  border-radius:8px;
+  border-width:thin;
+}
+
+a:active {
+  color: white;
+}
+
+h5{
+  font-size: 0.5rem;
+  color: white;
 }

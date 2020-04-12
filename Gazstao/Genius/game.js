@@ -25,8 +25,9 @@ function nextSequence() {
   userPattern = [];
 
   // Mostra ultimo
-  piscaBotao(randomChosenColour);
-
+  setTimeout(function(){
+    piscaBotao(randomChosenColour);
+  },1500);
 }
 
 // Funcao para testar a sequencia recebida
