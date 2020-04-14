@@ -19,6 +19,10 @@ $(".blue").click(function() {
   clica("blue");
 });
 
+$(document).click(function(){
+  if(!gameStarted) iniciaJogo();
+});
+
 // Adiciona listeners para as teclas
 $(document).keydown(function(event) {
   if (event.key.toLowerCase() == "a") clica("green");
