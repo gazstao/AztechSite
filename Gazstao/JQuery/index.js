@@ -24,6 +24,7 @@ console.log("Imagem:" + $("img").attr("src"));
 // Adicionando Listener
 
 $("img").click(mudaFigura);
+x
 $("h1").click(function() {
   $("h1").toggleClass("inverted")
 });
