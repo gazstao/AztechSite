@@ -1,0 +1,80 @@
+body {
+  font-family:'Open Sans',  "Helvetica","Arial", sans-serif;
+  font-style: normal;
+  margin: 0 auto;
+  background: linear-gradient(to top, #EEEEEE 0%, #DDDDDD 100%);
+  color: #802020;
+  height: 100%;
+  vertical-align: middle;
+  text-align: center;
+  display:grid;
+  min-height: 1024px;
+}
+
+a{
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:link {
+  color: darkslategray;
+  padding: 0 10px;
+}
+
+a:visited {
+  color: black;
+}
+
+a:hover {
+  color: black;
+  border-style: solid;
+  border-radius:8px;
+  border-width:thin;
+}
+
+a:active {
+  color: olive;
+}
+
+
+
+img {
+  position: relative;
+  border-radius: 1em;
+  margin-bottom: 2rem;
+}
+
+div{
+  margin-top: 4rem;
+  min-height: 10rem;
+  vertical-align: middle;
+  text-align: center;
+}
+
+p{
+  font-size: 1rem;
+}
+
+li{
+  text-align: left;
+  width: 700px;
+  margin: auto;
+}
+
+.bloco{
+  color: #802020;
+}
+
+.topspace{
+  margin-top: 1rem;
+  margin-bottom: 4rem;
+}
+
+.borda{
+  border: 4pt solid black;
+}
+
+.circular{
+  width: 350px;
+  border-radius: 100%;
+}
