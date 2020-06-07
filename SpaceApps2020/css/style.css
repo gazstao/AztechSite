@@ -2,7 +2,7 @@ body {
   font-family:'Open Sans',  "Helvetica","Arial", sans-serif;
   font-style: normal;
   margin: 0 auto;
-  background: linear-gradient(to top, #EEEEEE 0%, #DDDDDD 100%);
+  background: linear-gradient(to bottom, #8888FF 0%, #DDDDDD 100%);
   color: #802020;
   height: 100%;
   vertical-align: middle;
@@ -57,9 +57,10 @@ p{
 
 li{
   text-align: left;
-  width: 700px;
+  width: 900px;
   margin: auto;
 }
+
 
 .bloco{
   color: #802020;
@@ -75,6 +76,7 @@ li{
 }
 
 .circular{
-  width: 350px;
+  width: 150px;
   border-radius: 100%;
+  margin-left: 300px;
 }
