@@ -3,7 +3,7 @@ body {
   font-style: normal;
   margin: 0 auto;
   /* background: linear-gradient(to top, #857655 0%, #B5A685 5%, #D5C6A5 100%); */
-  background: linear-gradient(to top, #B5A685 0%, #D5C6A5 100%);
+  background: linear-gradient(to top right, #B5A685 0%, #E5D6B5 100%);
   height: 100%;
   vertical-align: middle;
   text-align: center;
