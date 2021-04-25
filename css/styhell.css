@@ -16,7 +16,7 @@ body {
 .dropbtn {
   background: linear-gradient(to bottom, #800000 0%, #798777 15%, #a2b29f 30%, #bdd2b6 50%, #f8ede3 100%);
   color: Black;
-  padding: 10px 15px;
+  padding: 10px;
   font-size: 16px;
   border: 1px;
   border-radius: 10px;
@@ -25,7 +25,7 @@ body {
 }
 
 .row {
-  margin: 1rem 15%;
+  margin: 1rem 10%;
   padding: 0;
 }
 
