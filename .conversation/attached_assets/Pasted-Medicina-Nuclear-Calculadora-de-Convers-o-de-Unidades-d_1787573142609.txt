@@ -1,0 +1,59 @@
+Medicina Nuclear
+– Calculadora de Conversão de Unidades de Radiação https://aztechtecnologia.com.br/calculaRad.html
+– GE Healthcare Documentation: https://www.gehealthcare.com/support/manuals 
+
+ 
+
+Datasets
+– Kraggle https://www.kaggle.com/
+– Nasa Open Data https://data.nasa.gov/
+ 
+ 
+Inteligência Artificial
+– Inteligência artificial local offline fácil e rápido com ollama em https://www.ollama.com
+– Modelos Llama da Meta disponíveis publicamente em https://llama.meta.com/
+– Ache um modelo de IA que faz o que você imagina em https://huggingface.co/spaces/
+– Interface Gráfica Estilo ChatGPT para Ollama (Open-WebUI) https://github.com/open-webui/open-webui
+– Riscos da IA https://airisk.mit.edu/
+
+ 
+
+Forense
+– Ferramentas Forenses para Windows Freeware https://www.nirsoft.net/utils/index.html
+– Autopsy: Ferramenta para Análise Forense https://www.autopsy.com/download/
+
+ 
+
+Projetos em Hackatons
+– Projeto do SpaceApps Challenge 2019 em Jupter – Curitiba Site do SpaceApps Challenge 2019
+– Projeto do Hack Pelo Futuro https://hackpelofuturo.paniclobster.com/team/14
+– SpaceApps Special Edition Lockcare – CapiWarez (c) SpaceApps 2020 Special Edition
+
+ 
+
+Hacking e Cibersegurança
+– Material de Fiscalização de Segurança da Informação e Cibersegurança do TCU Site do Portal do TCU
+– Darknet Diaries https://darknetdiaries.com/
+– The Hacker News https://thehackernews.com/
+– Bleeping Computer https://www.bleepingcomputer.com/
+– Pacific News https://pacificnews.today/
+– Malicious Life https://malicious.life/
+– Podcasts TrustedSec https://www.trustedsec.com/resources?sections=podcasts
+– Laboratórios PortSwigger https://portswigger.net/web-security/all-labs
+– Darkweb Informer https://darkwebinformer.com
+
+ 
+
+Diversos
+– Artigos em arxiv.org: https://arxiv.org/
+– Um teste de personalidade interessante: https://www.16personalities.com/br/teste-de-personalidade
+– Pesquisa de patentes nos Estados Unidos: https://patft.uspto.gov/netahtml/PTO/search-bool.html
+– Versão antiga da página de links, com muitos muitos links: https://aztechtecnologia.com.br/links.html
+
+ 
+
+Espaço
+– Sistema solar em escala https://joshworth.com/dev/pixelspace/pixelspace_solarsystem.html
+– Imagens de satélite recém recebidas e convertidas do National Oceanic and Atmospheric Administration
+– Imagens de satélite do Inmet INMET – Imagens de Satélite
+– Imagens de satélite atualizadas de hora em hora com imagens do Brasil no apolo11.com
