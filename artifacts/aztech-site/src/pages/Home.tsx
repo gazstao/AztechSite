@@ -125,7 +125,7 @@ export default function Home() {
         <div className="max-w-3xl mx-auto text-center relative z-10">
           <h2 className="text-4xl font-bold text-foreground mb-6">{t.home.contactTitle}</h2>
           <p className="text-xl text-muted-foreground mb-10">{t.home.contactDesc}</p>
-          <a href="mailto:contato@aztechtecnologia.com.br" className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-accent text-white font-semibold rounded-lg hover:bg-accent/90 transition-all duration-300 shadow-lg shadow-accent/20">
+          <a href="mailto:sac@aztechtecnologia.com.br" className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-accent text-white font-semibold rounded-lg hover:bg-accent/90 transition-all duration-300 shadow-lg shadow-accent/20">
             {t.home.contactBtn}
           </a>
         </div>
