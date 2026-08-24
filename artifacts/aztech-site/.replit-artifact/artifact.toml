@@ -1,0 +1,28 @@
+kind = "web"
+previewPath = "/"
+title = "Aztech Alta Tecnologia"
+description = "Site institucional multilíngue da Aztech Alta Tecnologia, reunindo soluções em medicina nuclear, cibersegurança, gestão de TI, inteligência artificial, educação continuada e projetos."
+version = "1.0.0"
+id = "artifacts/aztech-site"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 20732
+
+[services.development]
+run = "pnpm --filter @workspace/aztech-site run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/aztech-site", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/aztech-site/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "20732"
+BASE_PATH = "/"
