@@ -5,29 +5,117 @@ import { ExternalLink, Code2, Rocket, Lock } from 'lucide-react';
 
 const projects = [
   {
-    title: 'SpaceApps Challenge 2019',
-    description: 'Participação com desenvolvimento em Jupyter Notebook no hackathon da NASA, edição Curitiba.',
+    title: 'SpaceApps Challenge 2019 — Hexagoal',
+    description: 'Projeto Hexagoal desenvolvido para o SpaceApps Challenge 2019.',
     icon: <Rocket className="w-6 h-6" />,
-    url: '#',
+    url: 'https://2019.spaceappschallenge.org/challenges/living-our-world/smash-your-sdgs/teams/hexagoal/stream/',
     status: 'completed',
-    tags: ['NASA', 'Jupyter', 'Hackathon']
+    tags: ['SpaceApps', 'Hexagoal', 'Hackathon']
   },
   {
-    title: 'Hack Pelo Futuro',
-    description: 'Solução desenvolvida em equipe durante o hackathon voltado para inovações em momentos de crise.',
-    icon: <Code2 className="w-6 h-6" />,
-    url: 'https://hackpelofuturo.paniclobster.com/team/14',
-    status: 'completed',
-    tags: ['Innovation', 'Hackathon']
-  },
-  {
-    title: 'Lockcare - CapiWarez',
-    description: 'Projeto especial para o NASA SpaceApps 2020 Special Edition, focando em soluções de cuidado e segurança.',
+    title: 'SpaceApps Covid19 Challenge — LockCare',
+    description: 'Projeto LockCare desenvolvido pela Capiwarez Team para o desafio especial da NASA.',
     icon: <Lock className="w-6 h-6" />,
-    url: '#',
+    url: 'https://covid19.spaceappschallenge.org/challenges/covid-challenges/where-theres-a-link-theres-a-way/teams/capiwarez/stream/',
     status: 'completed',
-    tags: ['NASA', 'Security', 'Health']
-  }
+    tags: ['SpaceApps', 'Capiwarez', 'LockCare']
+  },
+  {
+    title: 'Workshop de Inteligência Artificial — RecrutaTech',
+    description: 'Workshop de Inteligência Artificial com Karol Barb e Wel Silva.',
+    icon: <Code2 className="w-6 h-6" />,
+    url: 'https://github.com/gazstao/Workshop-de-IA',
+    status: 'completed',
+    tags: ['IA', 'Workshop', 'RecrutaTech']
+  },
+  {
+    title: 'Material e Códigos da Palestra RecrutaTalks IA',
+    description: 'Materiais e códigos de apoio da palestra sobre Inteligência Artificial.',
+    icon: <Code2 className="w-6 h-6" />,
+    url: 'https://github.com/gazstao/RecrutaTalks-IA',
+    status: 'completed',
+    tags: ['IA', 'Código', 'RecrutaTech']
+  },
+  {
+    title: 'Hacking, IA e Eu — RecrutaTech 2025',
+    description: 'Roteiro e texto completo da apresentação da palestra “Hacking, IA e Eu”.',
+    icon: <Lock className="w-6 h-6" />,
+    url: 'https://aztechtecnologia.com.br/RecrutaTech2025v1.4.pdf/',
+    status: 'completed',
+    tags: ['Palestra', 'Hacking', 'IA']
+  },
+  {
+    title: 'Off The Matrix',
+    description: 'Compilação de estudos sobre cibersegurança e computação forense.',
+    icon: <Lock className="w-6 h-6" />,
+    url: 'https://aztechtecnologia.com.br/Documentos/OffTheMatrix.pdf',
+    status: 'completed',
+    tags: ['Cibersegurança', 'Forense', 'Estudos']
+  },
+  {
+    title: 'Projetos no GitHub',
+    description: 'Curso de Python, resumos de vídeos do YouTube usando Inteligência Artificial, laboratório web, forks e outros projetos.',
+    icon: <Code2 className="w-6 h-6" />,
+    url: 'https://github.com/gazstao',
+    status: 'completed',
+    tags: ['GitHub', 'Python', 'IA']
+  },
+  {
+    title: 'Monografia GETIC-III — UTFPR',
+    description: 'Monografia de conclusão da pós-graduação em Gestão da Tecnologia da Informação e Comunicação sobre o desafio da Aztech com a obsolescência tecnológica.',
+    icon: <Code2 className="w-6 h-6" />,
+    url: 'https://aztechtecnologia.com.br/CT_GETIC_III_2015_11.pdf',
+    status: 'completed',
+    tags: ['UTFPR', 'GETIC-III', 'Pesquisa']
+  },
+  {
+    title: 'Projeto de Mecatrônica — Ensitec',
+    description: 'Projeto de conclusão do curso de Mecatrônica na Ensitec.',
+    icon: <Code2 className="w-6 h-6" />,
+    url: 'https://aztechtecnologia.com.br/Documentos/AGVDoc.pdf',
+    status: 'completed',
+    tags: ['Mecatrônica', 'Ensitec', 'Projeto']
+  },
+  {
+    title: 'NFTs de Alberto Ferreira',
+    description: 'NFTs do fotógrafo brasileiro Alberto Ferreira, incluindo a famosa Bicicleta de Pelé, desenvolvidos sob licença pela AzTokens.',
+    icon: <Rocket className="w-6 h-6" />,
+    url: 'https://og.rarible.com/albertoferreira',
+    status: 'completed',
+    tags: ['NFT', 'AzTokens', 'Arte']
+  },
+  {
+    title: 'NFTs de André Ducci',
+    description: 'Ilustrações de André Ducci transformadas em NFTs no Rarible.',
+    icon: <Rocket className="w-6 h-6" />,
+    url: 'https://rarible.com/andreducci',
+    status: 'completed',
+    tags: ['NFT', 'Rarible', 'Ilustração']
+  },
+  {
+    title: 'Coleção Otaku Gems',
+    description: 'Experimentos no mundo da arte digital, especialmente a coleção “Otaku Gems”, gerada por IA.',
+    icon: <Rocket className="w-6 h-6" />,
+    url: 'https://og.rarible.com/gazstao',
+    status: 'completed',
+    tags: ['NFT', 'IA', 'Otaku Gems']
+  },
+  {
+    title: 'Nave Terra',
+    description: 'Blog onde armazeno alguns pensamentos no mundo digital.',
+    icon: <Code2 className="w-6 h-6" />,
+    url: 'https://naveterra.blogspot.com/',
+    status: 'completed',
+    tags: ['Blog', 'Tecnologia', 'Pessoal']
+  },
+  {
+    title: 'Musiquinhas antigas',
+    description: 'Gravações feitas em casa, perto dos anos 2000, preservadas para a posteridade.',
+    icon: <Rocket className="w-6 h-6" />,
+    url: 'https://www.palcomp3.com.br/gazstao/',
+    status: 'completed',
+    tags: ['Música', 'Arquivo', 'Pessoal']
+  },
 ];
 
 export default function Projects() {
