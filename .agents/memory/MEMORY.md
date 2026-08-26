@@ -1,0 +1,1 @@
+- [Windows pnpm/Rollup](windows-pnpm-rollup.md) — preserve the Windows-native Rollup optional dependency for local WAMP builds.
