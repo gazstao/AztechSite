@@ -1,2 +1,3 @@
 - [Windows pnpm/Rollup](windows-pnpm-rollup.md) — preserve the Windows-native Rollup optional dependency for local WAMP builds.
 - [Terminal visual identity](terminal-visual-identity.md) — keep Aztech’s public pages dark, technical and terminal-inspired.
+- [WAMP static exports](wamp-static-exports.md) — package assets and Apache rules defensively for local static hosting.
