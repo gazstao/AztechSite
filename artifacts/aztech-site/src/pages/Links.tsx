@@ -74,8 +74,8 @@ export default function Links() {
         <div className="flex flex-wrap gap-2 mb-10">
           <button
             onClick={() => setActiveCat('all')}
-            className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${
-              activeCat === 'all' ? 'bg-foreground text-background' : 'bg-muted text-muted-foreground hover:bg-muted/80'
+             className={`px-4 py-2 rounded-full text-sm font-medium transition-colors terminal-label ${
+               activeCat === 'all' ? 'bg-accent text-accent-foreground' : 'bg-muted text-muted-foreground hover:bg-muted/80'
             }`}
           >
             Todos
@@ -84,8 +84,8 @@ export default function Links() {
             <button
               key={c.id}
               onClick={() => setActiveCat(c.id)}
-              className={`flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium transition-colors ${
-                activeCat === c.id ? 'bg-accent text-white' : 'bg-muted text-muted-foreground hover:bg-muted/80'
+               className={`flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium transition-colors terminal-label ${
+                 activeCat === c.id ? 'bg-accent text-accent-foreground' : 'bg-muted text-muted-foreground hover:bg-muted/80'
               }`}
             >
               {c.icon}
@@ -104,7 +104,7 @@ export default function Links() {
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: i * 0.05, duration: 0.3 }}
-              className={`flex items-start gap-4 p-5 rounded-xl border border-border bg-card transition-all duration-300 ${
+               className={`terminal-card flex items-start gap-4 p-5 rounded-xl border border-border bg-card transition-all duration-300 ${
                 link.url !== '#' ? 'hover:border-accent hover:shadow-sm cursor-pointer group' : 'opacity-80 cursor-default'
               }`}
             >

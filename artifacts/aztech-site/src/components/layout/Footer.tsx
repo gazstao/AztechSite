@@ -6,14 +6,14 @@ export function Footer() {
   const isGazstao = location === '/gazstao';
 
   return (
-    <footer className={`border-t py-12 mt-auto ${isGazstao ? 'border-[#00ff00]/35 bg-black text-[#00ff00] font-mono' : 'border-border bg-background'}`}>
+    <footer className={`border-t py-12 mt-auto ${isGazstao ? 'border-[#00ff00]/35 bg-black text-[#00ff00] font-mono' : 'border-border bg-background font-mono'}`}>
       <div className="max-w-7xl mx-auto px-6 md:px-12 grid gap-6 md:grid-cols-[1.15fr_1fr_auto] items-start">
         <div>
           <div className="flex items-center gap-3 mb-3">
             <div className={`w-7 h-7 rounded-sm flex items-center justify-center ${isGazstao ? 'border border-[#00ff00]' : 'bg-foreground'}`}>
               <div className={`w-3 h-3 rounded-sm ${isGazstao ? 'bg-[#00ff00]' : 'bg-accent'}`} />
             </div>
-            <span className={`font-semibold ${isGazstao ? 'text-[#00ff00]' : 'text-foreground'}`}>Aztech Alta Tecnologia</span>
+            <span className={`font-semibold tracking-tight ${isGazstao ? 'text-[#00ff00]' : 'text-foreground'}`}>Aztech Alta Tecnologia<span className={isGazstao ? '' : 'text-accent'}>_</span></span>
           </div>
           <p className={`text-sm leading-relaxed max-w-sm ${isGazstao ? 'text-[#00ff00]/75' : 'text-muted-foreground'}`}>
             Manutenção de Equipamentos de Medicina Nuclear, Workstations e Cibersegurança – desde 1998

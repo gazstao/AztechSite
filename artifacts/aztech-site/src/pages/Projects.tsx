@@ -140,7 +140,7 @@ export default function Projects() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: i * 0.1, duration: 0.4 }}
-              className="group relative flex flex-col justify-between bg-card border border-border rounded-2xl p-8 overflow-hidden"
+               className="terminal-card group relative flex flex-col justify-between bg-card border border-border rounded-2xl p-8 overflow-hidden"
             >
               <div className="absolute top-0 right-0 w-32 h-32 bg-accent/5 rounded-bl-full -z-10 transition-transform group-hover:scale-125 duration-500" />
               
@@ -148,13 +148,13 @@ export default function Projects() {
                 <div className="w-12 h-12 bg-muted rounded-xl flex items-center justify-center text-accent mb-6">
                   {p.icon}
                 </div>
-                <h3 className="text-2xl font-bold text-foreground mb-3">{p.title}</h3>
+                 <h3 className="text-2xl font-bold text-foreground mb-3 terminal-glow">{p.title}</h3>
                 <p className="text-muted-foreground mb-6 leading-relaxed">
                   {p.description}
                 </p>
                 <div className="flex flex-wrap gap-2 mb-8">
                   {p.tags.map(tag => (
-                    <span key={tag} className="px-3 py-1 bg-accent/10 text-accent text-xs font-semibold rounded-full">
+                     <span key={tag} className="px-3 py-1 bg-accent/10 text-accent text-xs font-semibold rounded-full terminal-label">
                       {tag}
                     </span>
                   ))}

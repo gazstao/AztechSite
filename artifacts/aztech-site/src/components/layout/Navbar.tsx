@@ -61,17 +61,17 @@ export function Navbar() {
 
   return (
     <header 
-      className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-background/80 backdrop-blur-md border-b border-border py-3 shadow-sm' : 'bg-transparent py-5'
+      className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 font-mono ${
+        isScrolled ? 'bg-background/90 backdrop-blur-md border-b border-border py-3 shadow-sm' : 'bg-background/65 backdrop-blur-sm py-5'
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 md:px-12 flex items-center justify-between">
         <Link href="/" className="flex items-center gap-2 group">
-          <div className="w-8 h-8 bg-foreground rounded-sm flex items-center justify-center transform group-hover:rotate-12 transition-transform duration-300">
-            <div className="w-4 h-4 bg-accent rounded-sm" />
+          <div className="w-8 h-8 border border-accent text-accent flex items-center justify-center transform group-hover:rotate-12 transition-transform duration-300">
+            <div className="w-3 h-3 bg-accent" />
           </div>
           <span className="font-bold text-xl tracking-tight text-foreground">
-            Aztech
+            AZTECH<span className="text-accent">_</span>
           </span>
         </Link>
 
@@ -82,7 +82,7 @@ export function Navbar() {
               <Link 
                 key={link.href} 
                 href={link.href}
-                className={`text-sm font-medium transition-colors hover:text-accent relative ${
+                className={`text-xs font-medium uppercase tracking-wider transition-colors hover:text-accent relative ${
                   location === link.href ? 'text-accent' : 'text-muted-foreground'
                 }`}
               >
@@ -90,7 +90,7 @@ export function Navbar() {
                 {location === link.href && (
                   <motion.div 
                     layoutId="navbar-indicator"
-                    className="absolute -bottom-1 left-0 right-0 h-0.5 bg-accent"
+                    className="absolute -bottom-1 left-0 right-0 h-px bg-accent"
                     initial={false}
                   />
                 )}
@@ -105,8 +105,8 @@ export function Navbar() {
                 <button
                   key={l.code}
                   onClick={() => setLang(l.code)}
-                  className={`text-xs font-semibold px-2 py-1 rounded transition-colors ${
-                    lang === l.code ? 'bg-foreground text-background' : 'text-muted-foreground hover:bg-muted'
+                    className={`text-xs font-semibold px-2 py-1 rounded transition-colors ${
+                     lang === l.code ? 'bg-accent text-accent-foreground' : 'text-muted-foreground hover:bg-muted'
                   }`}
                 >
                   {l.label}
@@ -132,7 +132,7 @@ export function Navbar() {
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
-            className="fixed inset-0 z-50 bg-background flex flex-col pt-24 px-6 pb-6 md:hidden"
+            className="fixed inset-0 z-50 bg-background flex flex-col pt-24 px-6 pb-6 md:hidden font-mono"
           >
             <button 
               className="absolute top-6 right-6 p-2 text-foreground"
@@ -147,7 +147,7 @@ export function Navbar() {
                   key={link.href} 
                   href={link.href}
                   onClick={() => setMobileMenuOpen(false)}
-                  className={`font-medium transition-colors ${
+                  className={`font-medium uppercase tracking-wider transition-colors ${
                     location === link.href ? 'text-accent' : 'text-foreground'
                   }`}
                 >
@@ -165,8 +165,8 @@ export function Navbar() {
                   <button
                     key={l.code}
                     onClick={() => setLang(l.code)}
-                    className={`text-sm font-semibold px-3 py-1.5 rounded transition-colors ${
-                      lang === l.code ? 'bg-foreground text-background' : 'bg-muted text-muted-foreground'
+                      className={`text-sm font-semibold px-3 py-1.5 rounded transition-colors ${
+                       lang === l.code ? 'bg-accent text-accent-foreground' : 'bg-muted text-muted-foreground'
                     }`}
                   >
                     {l.label}

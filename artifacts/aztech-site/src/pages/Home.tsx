@@ -35,17 +35,17 @@ export default function Home() {
   ];
 
   return (
-    <div className="w-full">
+    <div className="w-full site-home">
       {/* Hero Section */}
       <section className="relative pt-32 pb-20 md:pt-48 md:pb-32 px-6 md:px-12 overflow-hidden">
-        <div className="absolute inset-0 bg-grid-slate-100/[0.04] bg-[bottom_1px_center] dark:bg-grid-slate-900/[0.04] pointer-events-none" style={{ maskImage: 'linear-gradient(to bottom, transparent, black)' }} />
+        <div className="absolute inset-0 pointer-events-none opacity-70" style={{ backgroundImage: 'linear-gradient(rgba(0,255,76,.06) 1px, transparent 1px), linear-gradient(90deg, rgba(0,255,76,.06) 1px, transparent 1px)', backgroundSize: '42px 42px', maskImage: 'linear-gradient(to bottom, transparent, black)' }} />
         <div className="max-w-7xl mx-auto flex flex-col items-center text-center relative z-10">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, ease: "easeOut" }}
           >
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-accent/10 text-accent font-medium text-sm mb-8 border border-accent/20">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-accent/10 text-accent font-medium text-sm mb-8 border border-accent/30 terminal-label">
               <div className="w-2 h-2 rounded-full bg-accent animate-pulse" />
               Alta Tecnologia
             </div>
@@ -55,7 +55,7 @@ export default function Home() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.1, ease: "easeOut" }}
-            className="text-5xl md:text-7xl font-bold tracking-tight text-foreground max-w-4xl"
+             className="text-5xl md:text-7xl font-bold tracking-tight text-foreground max-w-4xl terminal-glow"
           >
             {t.home.heroTitle}
           </motion.h1>
@@ -79,7 +79,7 @@ export default function Home() {
               onClick={() => {
                 document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
               }}
-              className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-foreground text-background font-semibold rounded-lg hover:bg-accent hover:text-white transition-all duration-300 transform hover:-translate-y-1 shadow-lg hover:shadow-accent/25"
+             className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-accent text-accent-foreground font-semibold rounded-lg hover:bg-accent/90 transition-all duration-300 transform hover:-translate-y-1 shadow-lg hover:shadow-accent/25 terminal-label"
             >
               {t.home.heroCta}
               <ArrowRight className="w-5 h-5" />
@@ -104,12 +104,12 @@ export default function Home() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-100px" }}
                 transition={{ duration: 0.5, delay: i * 0.1 }}
-                className="bg-card border border-border p-8 rounded-2xl hover:border-accent/50 transition-colors group"
+               className="terminal-card bg-card border border-border p-8 rounded-2xl hover:border-accent/70 transition-colors group"
               >
                 <div className="w-12 h-12 rounded-xl bg-accent/10 text-accent flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
                   {sol.icon}
                 </div>
-                <h3 className="text-xl font-bold text-foreground mb-3">{sol.title}</h3>
+                 <h3 className="text-xl font-bold text-foreground mb-3 terminal-glow">{sol.title}</h3>
                 <p className="text-muted-foreground leading-relaxed">{sol.desc}</p>
               </motion.div>
             ))}
@@ -125,7 +125,7 @@ export default function Home() {
         <div className="max-w-3xl mx-auto text-center relative z-10">
           <h2 className="text-4xl font-bold text-foreground mb-6">{t.home.contactTitle}</h2>
           <p className="text-xl text-muted-foreground mb-10">{t.home.contactDesc}</p>
-          <a href="mailto:sac@aztechtecnologia.com.br" className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-accent text-white font-semibold rounded-lg hover:bg-accent/90 transition-all duration-300 shadow-lg shadow-accent/20">
+           <a href="mailto:sac@aztechtecnologia.com.br" className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-accent text-accent-foreground font-semibold rounded-lg hover:bg-accent/90 transition-all duration-300 shadow-lg shadow-accent/20 terminal-label">
             {t.home.contactBtn}
           </a>
         </div>

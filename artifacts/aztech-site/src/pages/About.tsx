@@ -16,7 +16,7 @@ export default function About() {
           <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-accent/10 text-accent mb-6">
             <div className="w-6 h-6 bg-accent rounded-sm rotate-45" />
           </div>
-          <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6">{t.about.title}</h1>
+           <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6 terminal-glow">{t.about.title}</h1>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">{t.about.subtitle}</p>
         </motion.div>
 
@@ -27,7 +27,7 @@ export default function About() {
             transition={{ delay: 0.2 }}
             className="md:col-span-4"
           >
-            <div className="aspect-[4/5] bg-muted rounded-2xl overflow-hidden relative border border-border">
+             <div className="terminal-card aspect-[4/5] bg-muted rounded-2xl overflow-hidden relative border border-border">
               <div className="absolute inset-0 bg-gradient-to-br from-foreground/5 to-transparent" />
               {/* Geometric decorative element in place of a generic office photo */}
               <div className="absolute inset-0 flex items-center justify-center">
