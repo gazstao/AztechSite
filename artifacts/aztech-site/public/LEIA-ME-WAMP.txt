@@ -4,13 +4,13 @@ AZTECH ALTA TECNOLOGIA — VERSÃO PRONTA PARA WAMP
 
    C:\wamp64\www
 
-   O pacote já contém a pasta `aztech`. Ao final, confira se estes
-   arquivos existem:
+   Este pacote foi compilado para a raiz do Apache. Ao final, confira
+   se estes arquivos existem:
 
-   C:\wamp64\www\aztech\index.html
-   C:\wamp64\www\aztech\.htaccess
-   C:\wamp64\www\aztech\assets\index-DxfgTwia.js
-   C:\wamp64\www\aztech\assets\index-ywz9v03F.css
+   C:\wamp64\www\index.html
+   C:\wamp64\www\.htaccess
+   C:\wamp64\www\assets\index-DxfgTwia.js
+   C:\wamp64\www\assets\index-ywz9v03F.css
 
    Em algumas instalações, o caminho da pasta pública é:
 
@@ -19,11 +19,13 @@ AZTECH ALTA TECNOLOGIA — VERSÃO PRONTA PARA WAMP
 2. Inicie o Apache pelo painel do WAMP.
 3. Acesse:
 
-   http://localhost/aztech/
+   http://127.0.0.99/
 
-O pacote já foi compilado para funcionar na subpasta /aztech/ e já inclui
-o arquivo .htaccess mínimo para as rotas do React. CSS e JavaScript usam
-os tipos MIME padrão do Apache.
+   Também pode usar http://localhost/
+
+O pacote já foi compilado com BASE_PATH=/ e já inclui o arquivo .htaccess
+mínimo para as rotas do React. CSS e JavaScript usam os tipos MIME padrão
+do Apache.
 
 Se as páginas internas retornarem 404 ao atualizar o navegador, habilite
 o módulo rewrite_module no Apache:

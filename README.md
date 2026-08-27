@@ -123,7 +123,7 @@ A versão final é uma aplicação estática. O comando de build transforma o c�
 
 ### Build para acesso na raiz do servidor
 
-Use esta opção quando o site será acessado diretamente em um domínio ou em `http://localhost/`:
+Use esta opção quando o site será acessado diretamente em um domínio ou na raiz do WAMP, como `http://127.0.0.99/`:
 
 #### PowerShell
 
@@ -174,37 +174,40 @@ assets\
 
 ## 6. Hospedar no WAMP
 
-### 6.1 Copiar os arquivos
+### 6.1 Copiar os arquivos para a raiz do WAMP
 
-Depois do build, copie **o conteúdo** de:
+Para usar a versão pronta na raiz do Apache, gere o build com `BASE_PATH=/` e copie **o conteúdo** de:
 
 ```text
 artifacts\aztech-site\dist\public
 ```
 
-para uma nova pasta:
+para a pasta pública do WAMP:
 
 ```text
-C:\wamp64\www\aztech
+C:\wamp64\www
 ```
 
 Dependendo da instalação do WAMP, o caminho pode ser:
 
 ```text
-C:\wamp\www\aztech
+C:\wamp\www
 ```
 
 Não copie somente a pasta `src`. O WAMP deve receber os arquivos gerados dentro de `dist\public`.
+
+Ao usar o pacote ZIP pronto, extraia-o diretamente em `C:\wamp64\www`. A
+versão principal do pacote é composta por `index.html`, `assets\` e `.htaccess`
+na raiz do WAMP.
 
 ### 6.2 Configurar as rotas do React
 
 Como o site possui páginas como `/projects`, `/links`, `/gazstao` e `/sobre`, o Apache precisa redirecionar rotas desconhecidas para `index.html`.
 
-Dentro de `C:\wamp64\www\aztech`, crie um arquivo chamado `.htaccess`:
+Dentro de `C:\wamp64\www`, crie um arquivo chamado `.htaccess`:
 
 ```apache
 RewriteEngine On
-RewriteBase /aztech/
 
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
@@ -224,17 +227,21 @@ Reinicie o Apache após habilitar o módulo.
 Inicie o Apache no WAMP e abra:
 
 ```text
-http://localhost/aztech/
+http://127.0.0.99/
 ```
 
 Teste também diretamente:
 
 ```text
-http://localhost/aztech/projects
-http://localhost/aztech/links
-http://localhost/aztech/gazstao
-http://localhost/aztech/sobre
+http://127.0.0.99/projects
+http://127.0.0.99/links
+http://127.0.0.99/gazstao
+http://127.0.0.99/sobre
 ```
+
+Se preferir hospedar em `http://localhost/aztech/`, use o build com
+`BASE_PATH=/aztech/` descrito na seção anterior e copie o conteúdo de
+`dist\public` para `C:\wamp64\www\aztech`.
 
 Se uma página abrir normalmente ao clicar na navegação, mas apresentar erro 404 ao atualizar o navegador, o problema está no `.htaccess` ou no `rewrite_module`.
 
