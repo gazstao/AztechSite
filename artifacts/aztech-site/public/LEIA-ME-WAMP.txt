@@ -1,21 +1,28 @@
 AZTECH ALTA TECNOLOGIA — VERSÃO PRONTA PARA WAMP
 
-1. Extraia o conteúdo deste pacote.
-2. Copie os arquivos extraídos para:
+1. Extraia este pacote diretamente em:
 
-   C:\wamp64\www\aztech
+   C:\wamp64\www
 
-   Em algumas instalações, o caminho é:
+   O pacote já contém a pasta `aztech`. Ao final, confira se estes
+   arquivos existem:
 
-   C:\wamp\www\aztech
+   C:\wamp64\www\aztech\index.html
+   C:\wamp64\www\aztech\.htaccess
+   C:\wamp64\www\aztech\assets\index-DxfgTwia.js
+   C:\wamp64\www\aztech\assets\index-ywz9v03F.css
 
-3. Inicie o Apache pelo painel do WAMP.
-4. Acesse:
+   Em algumas instalações, o caminho da pasta pública é:
+
+   C:\wamp\www
+
+2. Inicie o Apache pelo painel do WAMP.
+3. Acesse:
 
    http://localhost/aztech/
 
 O pacote já foi compilado para funcionar na subpasta /aztech/ e já inclui
-o arquivo .htaccess para as rotas do React.
+o arquivo .htaccess para as rotas do React e os tipos MIME de CSS e JavaScript.
 
 Se as páginas internas retornarem 404 ao atualizar o navegador, habilite
 o módulo rewrite_module no Apache:

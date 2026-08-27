@@ -14,3 +14,17 @@ mtime_ms = 1787857236791
 storage_uri = "gcs://replit-rams-assets-spock/rams/assets/repl:d31f9ebe-4550-467d-8b05-0729c91a870f/b852e730-2bed-4855-8bfb-672a3cb84904/fc0ab620-bbdf-45a3-8b2c-871b8cbfaa8c"
 storage_version_token = "1787857241214029"
 content_type = "application/octet-stream"
+
+[[outputs]]
+id = "gOis_vzau3gxg793F-YGv"
+uri = "file://artifacts/aztech-site/dist/aztech-site-wamp-corrigido.zip"
+type = "unspecified"
+title = "Aztech Alta Tecnologia — pacote WAMP corrigido"
+description = "Extraia diretamente em C:\\wamp64\\www. O pacote já contém a pasta aztech, a pasta assets, .htaccess e os tipos MIME de CSS/JavaScript."
+logical_id = "b26a29b9-e310-4c2b-9c65-b33a51ff4d21"
+content_hash = "sha256:2b4daa99b875a09516e7c5ff138100c340e8d7fbac415d930fc815ba36bad8f6"
+size = 196595
+mtime_ms = 1787857947396
+storage_uri = "gcs://replit-rams-assets-spock/rams/assets/repl:d31f9ebe-4550-467d-8b05-0729c91a870f/b26a29b9-e310-4c2b-9c65-b33a51ff4d21/6ed12fde-23ad-4233-9dcf-41a7cc6436bf"
+storage_version_token = "1787857953397616"
+content_type = "application/octet-stream"
