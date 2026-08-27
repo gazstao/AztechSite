@@ -1,0 +1,16 @@
+uploads = []
+generated = []
+
+[[outputs]]
+id = "PegmyjjrI9MqTHXVufNb6"
+uri = "file://artifacts/aztech-site/dist/aztech-site-wamp.zip"
+type = "unspecified"
+title = "Aztech Alta Tecnologia — pacote pronto para WAMP"
+description = "Versão estática compilada para extrair em C:\\wamp64\\www\\aztech e acessar em http://localhost/aztech/. Inclui .htaccess e instruções rápidas."
+logical_id = "b852e730-2bed-4855-8bfb-672a3cb84904"
+content_hash = "sha256:eb1e951b15fccac14a4abe2c174c8daf0be711084e9d88c5478af839e0a5945e"
+size = 196131
+mtime_ms = 1787857236791
+storage_uri = "gcs://replit-rams-assets-spock/rams/assets/repl:d31f9ebe-4550-467d-8b05-0729c91a870f/b852e730-2bed-4855-8bfb-672a3cb84904/fc0ab620-bbdf-45a3-8b2c-871b8cbfaa8c"
+storage_version_token = "1787857241214029"
+content_type = "application/octet-stream"

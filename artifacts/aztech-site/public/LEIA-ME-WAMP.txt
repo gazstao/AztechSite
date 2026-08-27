@@ -1,0 +1,28 @@
+AZTECH ALTA TECNOLOGIA — VERSÃO PRONTA PARA WAMP
+
+1. Extraia o conteúdo deste pacote.
+2. Copie os arquivos extraídos para:
+
+   C:\wamp64\www\aztech
+
+   Em algumas instalações, o caminho é:
+
+   C:\wamp\www\aztech
+
+3. Inicie o Apache pelo painel do WAMP.
+4. Acesse:
+
+   http://localhost/aztech/
+
+O pacote já foi compilado para funcionar na subpasta /aztech/ e já inclui
+o arquivo .htaccess para as rotas do React.
+
+Se as páginas internas retornarem 404 ao atualizar o navegador, habilite
+o módulo rewrite_module no Apache:
+
+WAMP > Apache > Apache modules > rewrite_module
+
+Depois reinicie o Apache.
+
+Este pacote é estático. Não é necessário instalar Node.js, pnpm, PHP ou
+MySQL para executá-lo no WAMP. O site atualmente não usa banco de dados.
