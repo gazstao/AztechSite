@@ -42,3 +42,17 @@ mtime_ms = 1787858600126
 storage_uri = "gcs://replit-rams-assets-spock/rams/assets/repl:d31f9ebe-4550-467d-8b05-0729c91a870f/7ce64e89-58f8-4831-9ded-41b47161089f/dfd9830c-3a68-4662-80c7-13e9753fd5c1"
 storage_version_token = "1787858606366622"
 content_type = "application/octet-stream"
+
+[[outputs]]
+id = "9AwNxMnamVmIOqi7FPxbU"
+uri = "file://artifacts/aztech-site/dist/aztech-site-wamp-raiz.zip"
+type = "unspecified"
+title = "Aztech Alta Tecnologia — pacote para raiz do WAMP"
+description = "Build pronto para http://127.0.0.99/ ou http://localhost/, com caminhos /assets/... e sem necessidade de editar o index.html."
+logical_id = "e13cd0eb-4e25-4b37-8c0d-da4bbda9c845"
+content_hash = "sha256:69bf90845029956798d60631c663a187d63b22719d9145122b03ee080b07ec3d"
+size = 196214
+mtime_ms = 1787859141202
+storage_uri = "gcs://replit-rams-assets-spock/rams/assets/repl:d31f9ebe-4550-467d-8b05-0729c91a870f/e13cd0eb-4e25-4b37-8c0d-da4bbda9c845/ce76bf55-97e1-440c-9fe5-6d8cafdfc934"
+storage_version_token = "1787859162264735"
+content_type = "application/octet-stream"

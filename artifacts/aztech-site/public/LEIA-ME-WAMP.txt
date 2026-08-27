@@ -9,8 +9,8 @@ AZTECH ALTA TECNOLOGIA — VERSÃO PRONTA PARA WAMP
 
    C:\wamp64\www\index.html
    C:\wamp64\www\.htaccess
-   C:\wamp64\www\assets\index-DxfgTwia.js
-   C:\wamp64\www\assets\index-ywz9v03F.css
+   C:\wamp64\www\assets\index-*.js
+   C:\wamp64\www\assets\index-*.css
 
    Em algumas instalações, o caminho da pasta pública é:
 
