@@ -28,3 +28,17 @@ mtime_ms = 1787858302797
 storage_uri = "gcs://replit-rams-assets-spock/rams/assets/repl:d31f9ebe-4550-467d-8b05-0729c91a870f/b26a29b9-e310-4c2b-9c65-b33a51ff4d21/6476c2a3-9d3c-4096-ac7a-9e48a61ad4ad"
 storage_version_token = "1787858327068870"
 content_type = "application/octet-stream"
+
+[[outputs]]
+id = "26yOVX86qJ_7B526psf6f"
+uri = "file://artifacts/aztech-site/dist/aztech-site-wamp-final.zip"
+type = "unspecified"
+title = "Aztech Alta Tecnologia — pacote WAMP final"
+description = "Versão final compilada. Extraia diretamente em C:\\wamp64\\www; inclui a pasta aztech, assets e .htaccess mínimo para evitar HTTP 500."
+logical_id = "7ce64e89-58f8-4831-9ded-41b47161089f"
+content_hash = "sha256:f296d874f8ca390e0eacc32d0b023b4c53e7e59de73bfb5e815014d5a42b7163"
+size = 196509
+mtime_ms = 1787858600126
+storage_uri = "gcs://replit-rams-assets-spock/rams/assets/repl:d31f9ebe-4550-467d-8b05-0729c91a870f/7ce64e89-58f8-4831-9ded-41b47161089f/dfd9830c-3a68-4662-80c7-13e9753fd5c1"
+storage_version_token = "1787858606366622"
+content_type = "application/octet-stream"

@@ -22,7 +22,8 @@ AZTECH ALTA TECNOLOGIA — VERSÃO PRONTA PARA WAMP
    http://localhost/aztech/
 
 O pacote já foi compilado para funcionar na subpasta /aztech/ e já inclui
-o arquivo .htaccess para as rotas do React e os tipos MIME de CSS e JavaScript.
+o arquivo .htaccess mínimo para as rotas do React. CSS e JavaScript usam
+os tipos MIME padrão do Apache.
 
 Se as páginas internas retornarem 404 ao atualizar o navegador, habilite
 o módulo rewrite_module no Apache:
