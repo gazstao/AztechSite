@@ -11,6 +11,7 @@ export function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const isGazstao = location === '/gazstao';
+  const isHome = location === '/' || location === '/solucoes';
 
   useEffect(() => {
     const handleScroll = () => {
@@ -21,7 +22,7 @@ export function Navbar() {
   }, []);
 
   const navLinks = [
-    { href: '/', label: t.nav.home },
+    { href: '/solucoes', label: t.nav.home },
     { href: '/links', label: t.nav.links },
     { href: '/projects', label: t.nav.projects },
     { href: '/sobre', label: t.nav.about },
@@ -38,7 +39,7 @@ export function Navbar() {
     return (
       <nav className="fixed top-0 left-0 w-full z-50 p-4 flex justify-between items-center text-[#00ff00] font-mono">
         <div>
-          <Link href="/" className="hover:text-white transition-colors duration-300">
+          <Link href="/solucoes" className="hover:text-white transition-colors duration-300">
             [return_to_base]
           </Link>
         </div>
@@ -66,7 +67,7 @@ export function Navbar() {
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 md:px-12 flex items-center justify-between">
-        <Link href="/" className="flex items-center gap-2 group">
+        <Link href="/solucoes" className="flex items-center gap-2 group">
           <div className="w-8 h-8 border border-accent text-accent flex items-center justify-center transform group-hover:rotate-12 transition-transform duration-300">
             <div className="w-3 h-3 bg-accent" />
           </div>
@@ -83,11 +84,11 @@ export function Navbar() {
                 key={link.href} 
                 href={link.href}
                 className={`text-xs font-medium uppercase tracking-wider transition-colors hover:text-accent relative ${
-                  location === link.href ? 'text-accent' : 'text-muted-foreground'
+                  (link.href === '/solucoes' ? isHome : location === link.href) ? 'text-accent' : 'text-muted-foreground'
                 }`}
               >
                 {link.label}
-                {location === link.href && (
+                {(link.href === '/solucoes' ? isHome : location === link.href) && (
                   <motion.div 
                     layoutId="navbar-indicator"
                     className="absolute -bottom-1 left-0 right-0 h-px bg-accent"
@@ -148,7 +149,7 @@ export function Navbar() {
                   href={link.href}
                   onClick={() => setMobileMenuOpen(false)}
                   className={`font-medium uppercase tracking-wider transition-colors ${
-                    location === link.href ? 'text-accent' : 'text-foreground'
+                    (link.href === '/solucoes' ? isHome : location === link.href) ? 'text-accent' : 'text-foreground'
                   }`}
                 >
                   {link.label}

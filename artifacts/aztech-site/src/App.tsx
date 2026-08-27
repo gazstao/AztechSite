@@ -6,6 +6,7 @@ import { TooltipProvider } from '@/components/ui/tooltip';
 import NotFound from '@/pages/not-found';
 import {
   Route,
+  Redirect,
   Switch,
   useLocation,
   Router as WouterRouter,
@@ -27,7 +28,8 @@ function Router() {
     <Shell>
       <RoutedErrorBoundary>
         <Switch>
-          <Route path="/" component={Home} />
+          <Route path="/" component={() => <Redirect to="/solucoes" />} />
+          <Route path="/solucoes" component={Home} />
           <Route path="/links" component={Links} />
           <Route path="/projects" component={Projects} />
           <Route path="/gazstao" component={Gazstao} />
